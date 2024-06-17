@@ -1,0 +1,11 @@
+version: "3"
+services:
+  djangoweb:
+    restart: always
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./:/home/project
